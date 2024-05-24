@@ -2,5 +2,6 @@
 node_modules
 .tap
 
+.github
 test
 eslint.config.js
