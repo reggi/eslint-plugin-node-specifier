@@ -1,0 +1,29 @@
+{
+  "name": "eslint-plugin-node-specifier",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix .",
+    "lint": "npm run eslint && npm run style && npm run sortpackagejson",
+    "lint:fix": "npm run eslint:fix && npm run style:fix && npm run sortpackagejson:fix",
+    "sortpackagejson": "sort-package-json --check",
+    "sortpackagejson:fix": "sort-package-json",
+    "style": "prettier --check .",
+    "style:fix": "prettier --write .",
+    "tap": "tap test/*.js --show-full-coverage",
+    "test": "npm run tap && npm run lint"
+  },
+  "prettier": "@github/prettier-config",
+  "devDependencies": {
+    "@github/prettier-config": "^0.0.6",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
+    "prettier": "^3.2.5",
+    "sort-package-json": "^2.10.0",
+    "tap": "^19.0.0"
+  }
+}
