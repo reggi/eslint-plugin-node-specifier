@@ -5,7 +5,6 @@ This is an eslint rule to `enforce` or `disallow` the use of `node:` specifier.
 ```js
 import globals from 'globals'
 import nodeSpecifier from 'eslint-plugin-node-specifier'
-import nodeSpecifier from './index.js'
 
 export default [
   {files: ['**/*.js'], languageOptions: {sourceType: 'commonjs'}},
